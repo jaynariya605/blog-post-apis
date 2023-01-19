@@ -1,26 +1,32 @@
 {
-  "name": "nodejs-template",
+  "name": "my-prisma-project",
   "version": "1.0.0",
-  "description": "Node.js service template",
-  "main": "src/server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start:prod": "NODE_ENV=production node src/server.js",
-    "start:dev": "NODE_ENV=development node src/server.js",
-    "start:local": "NODE_ENV=local nodemon src/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mogenius/nodejs-template.git"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prisma": "^4.8.1"
   },
-  "author": "Daniel Franken",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mogenius/nodejs-template/issues"
-  },
-  "homepage": "https://github.com/mogenius/nodejs-template#readme",
   "dependencies": {
-    "cross-env": "^7.0.3",
-    "dotenv": "^16.0.1",
-    "nodemon": "^2.0.19"
+    "@apollo/server": "^4.3.0",
+    "@graphql-tools/schema": "^9.0.13",
+    "@prisma/client": "^4.8.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-ws": "^5.11.2",
+    "graphql-yoga": "^3.3.0",
+    "jsonwebtoken": "^9.0.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.12.0"
   }
 }
